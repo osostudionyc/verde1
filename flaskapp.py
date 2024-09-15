@@ -17,7 +17,7 @@ def mainindexcopy():
     return '''
     <form method="POST">
             <br><br>
-            '<center><img src="static/deleteplastic2.png" alt="Logo" style="width:350px"> <br><br><p><i>🌿 Welcome to <b></i>DeletePlastic.io<i></b> - Eliminate Plastic from Your Life! 🌎</i>
+            '<center><img src="deleteplastic2.png" alt="Logo" style="width:350px"> <br><br><p><i>🌿 Welcome to <b></i>DeletePlastic.io<i></b> - Eliminate Plastic from Your Life! 🌎</i>
 
 
 
@@ -28,10 +28,10 @@ def mainindexcopy():
 </center>
  </p>'
             <br><br><center>
-             <a href="/webapp"> <img src="static/tquiz.png" style="width:300px" > <br>
-            <a href="/reviews"> <img src="static/PRZ.png" style="width:300px"></center>
+             <a href="/webapp"> <img src="tquiz.png" style="width:300px" > <br>
+            <a href="/reviews"> <img src="PRZ.png" style="width:300px"></center>
             <br><br><br><br>
-            <center><a href = "mailto: hello@deleteplastic.io"><img src="static/contact.png" style="width:300px"</img></a></center>
+            <center><a href = "mailto: hello@deleteplastic.io"><img src="contact.png" style="width:300px"</img></a></center>
             <p>
     </form>
     '''
