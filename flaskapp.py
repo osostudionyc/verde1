@@ -10,8 +10,8 @@ def mainindexcopy():
     if request.method == 'POST':
         output301 = '<br>' \
                 + '<br>' \
-                + '<a href="/webapp"> PRODUCT APP <br><br>' \
-                + '<a href="/hello"> TREE SCAN APP ' \
+                + '<a href="/"> PRODUCT APP <br><br>' \
+                + '<a href="/"> TREE SCAN APP ' \
                 + '<br><br>' 
         return output301
     return '''
