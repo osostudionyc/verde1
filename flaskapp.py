@@ -19,7 +19,7 @@ def mainindexcopy():
     return '''
     <form method="POST">
             <br><br>
-            '<center><img src="https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/04-pizza-dad.jpeg" alt="Logo" style="width:350px"> <br><br><p><i>🌿 Welcome to <b></i>DeletePlastic.io<i></b> - Eliminate Plastic from Your Life! 🌎</i>
+            '<center><img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/deleteplastic2.png" alt="Logo" style="width:350px"> <br><br><p><i>🌿 Welcome to <b></i>DeletePlastic.io<i></b> - Eliminate Plastic from Your Life! 🌎</i>
 
 
 
@@ -30,10 +30,10 @@ def mainindexcopy():
 </center>
  </p>'
             <br><br><center>
-             <a href="/webapp"> <img src="tquiz.png" style="width:300px" > <br>
+             <a href="/webapp"> <img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/tquiz.png" style="width:300px" > <br>
             <a href="/reviews"> <img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/PRZ.png" style="width:300px"></center>
             <br><br><br><br>
-            <center><a href = "mailto: hello@deleteplastic.io"><img src="contact.png" style="width:300px"</img></a></center>
+            <center><a href = "mailto: hello@deleteplastic.io"><img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/contact.png" style="width:300px"</img></a></center>
             <p>
     </form>
     '''
