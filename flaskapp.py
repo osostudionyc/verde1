@@ -28,7 +28,7 @@ def mainindexcopy():
 <img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/DPdescripupdate.png" style="width:1000px">
        
 </center>
- </p>'
+ </p>
             <br><br><center>
              <a href="/webapp"> <img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/tquiz.png" style="width:300px" > <br>
             <a href="/reviews"> <img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/PRZ.png" style="width:300px"></center>
