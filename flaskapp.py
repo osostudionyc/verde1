@@ -19,7 +19,7 @@ def mainindexcopy():
     return '''
     <form method="POST">
             <br><br>
-            '<center><img src="https://github.com/osostudionyc/verde1/blob/main/deleteplastic2.png" alt="Logo" style="width:350px"> <br><br><p><i>🌿 Welcome to <b></i>DeletePlastic.io<i></b> - Eliminate Plastic from Your Life! 🌎</i>
+            '<center><img src="https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/04-pizza-dad.jpeg" alt="Logo" style="width:350px"> <br><br><p><i>🌿 Welcome to <b></i>DeletePlastic.io<i></b> - Eliminate Plastic from Your Life! 🌎</i>
 
 
 
