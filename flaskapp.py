@@ -31,7 +31,7 @@ def mainindexcopy():
  </p>'
             <br><br><center>
              <a href="/webapp"> <img src="tquiz.png" style="width:300px" > <br>
-            <a href="/reviews"> <img src="PRZ.png" style="width:300px"></center>
+            <a href="/reviews"> <img src="https://github.com/osostudionyc/verde1/blob/main/PRZ.png" style="width:300px"></center>
             <br><br><br><br>
             <center><a href = "mailto: hello@deleteplastic.io"><img src="contact.png" style="width:300px"</img></a></center>
             <p>
