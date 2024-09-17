@@ -245,7 +245,7 @@ def generate_pdf():
     curl -X POST http://127.0.0.1:5000/generate_pdf \
           -H "Content-Type: application/json" \
           -d '{
-                "template_id": "your_template_id",
+                "template_id": "B42E8ED7-A637-4073-9671-B0ABA6537858",
                 "data": {
                     "name": "John Doe",
                     "date": "2024-09-16"
