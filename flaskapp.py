@@ -103,6 +103,8 @@ def index():
             custbudget = "50"
         elif int(custbudget) > int(custbudget)*100:
             budgethold = str(int(custbudget))
+        else:
+            custbudget = "Test"
 
         ######################################################################### PRODUCTS #######################################################
 
@@ -156,11 +158,7 @@ def index():
     '''
 
 
-'''
-@app.route("/")
-def hello_world():
-    return 'Hello World Again TEST'
-'''
+
 #main driver function 
 
 if __name__ == '__main__':
