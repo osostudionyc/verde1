@@ -89,34 +89,13 @@ def index():
         tc = 0
 
         # Get form data
-        months = request.form.get('months')
-        check123 = request.form.get('check123')
-        option2 = request.form.get('option2')
-        budgethold = request.form.get('budget')
-        pans1 = request.form.get('pans1')
-        cups1 = request.form.get('cups1')
-        budget = request.form.get('budget')
+        
         custbudget = request.form.get('custbudget')
 
-        filter1 = request.form.get('filter1')
-        shower1 = request.form.get('shower1')
-        bottle1 = request.form.get('bottle1')
+   
 
 
 
-        #budget
-        if budget =="1":
-            budgethold = "50"
-        elif budget =="2":
-            budgethold = "100"
-        elif budget =="3":
-            budgethold = "250"
-        elif budget =="4":
-            budgethold = "500"
-        elif budget =="5":
-            budgethold = "1500"
-
-            #budgethold = str(int(budgethold)*3) + " Months"
 
         #custbudget
         if custbudget == "":
@@ -192,16 +171,7 @@ def index():
         # Create output string
         output = '<br>' \
                + '<center><a href="/"><img src="static/deleteplastic2.png" style="width:350px"></a></center><br>' \
-               + kitchen1 \
-               + pans1 \
-               + check123 \
-               + cups1 \
-               + '<br><img src="static/waterfiltheader.png" style="width:500px"</img><br>' \
-               + filter1 \
-               + "<br>" \
-               + shower1 \
-               + "<br>" \
-               + bottle1 \
+               + custbudget \
                + '<br><br>' \
                + '<a href="https://deleteplastic.io/webapp"> <b><p <p style="color:green;"><img src="static/restart2.png" style="width:250px; border: solid 0px #CCC"</p></b> </a>'
                
