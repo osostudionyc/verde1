@@ -91,7 +91,12 @@ def index():
         # Get form data
         
         custbudget = request.form.get('custbudget')
+        address = request.form.get('address')
+        city = request.form.get('city')
         state = request.form.get('state')
+        type = request.form.get('type')
+        built = request.form.get('built')
+        sqft = request.form.get('sqft')
 
    
 
@@ -134,7 +139,7 @@ def index():
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap">
 </head>
             <center><a href='/' ><img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/verde.png" width="350"></a>
-            <br><i>[Enter some basic information about your proeprty and our proprietary database will create a custiome report with the best ROI renovation projects] </i></center><br><br><br><br><br>
+            <br><i>[Enter some basic information about your proeprty and our proprietary database will create a custiome report with the best ROI renovation projects] </i><br><br><br><br><br>
             <br><br>
             <label>Alternate: Enter a custom budget: $</label>
             <input type="text" name="custbudget"><br><br>
@@ -160,7 +165,7 @@ def index():
             <i> The app will rank products by health impact and create a custom priority list based on your desired spend </p>
             <br>
             <br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit"></center>
         </form>
     '''
 
