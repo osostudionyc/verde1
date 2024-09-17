@@ -113,7 +113,7 @@ def index():
                + '<center><a href="/"><img src="static/deleteplastic2.png" style="width:350px"></a></center><br>' \
                + custbudget \
                + '<br><br>' \
-               + 'State' \
+               + 'State:<br>' \
                + state \
                + '<a href="https://deleteplastic.io/webapp"> <b><p <p style="color:green;"><img src="static/restart2.png" style="width:250px; border: solid 0px #CCC"</p></b> </a>'
                
@@ -139,8 +139,23 @@ def index():
             <label>Alternate: Enter a custom budget: $</label>
             <input type="text" name="custbudget"><br><br>
             <br><br>
+            <label>Address:</label>
+            <input type="text" name="address"><br><br>
+            <br><br>
+            <label>City</label>
+            <input type="text" name="city"><br><br>
+            <br><br>
             <label>State</label>
             <input type="text" name="state"><br><br>
+            <br><br>
+            label>Type</label>
+            <input type="text" name="type"><br><br>
+            <br><br>
+            label>Year Built</label>
+            <input type="text" name="built"><br><br>
+            <br><br>
+            label>Square Footage</label>
+            <input type="text" name="sqft"><br><br>
             <br><br>
             <i> The app will rank products by health impact and create a custom priority list based on your desired spend </p>
             <br>
