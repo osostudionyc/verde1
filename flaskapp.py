@@ -5,7 +5,15 @@ from flask import request
 
 app = Flask(__name__)
 
+# PDFMonkey API details
+PDFMONKEY_API_KEY = 'mS2YudqXyK14-tw_bfVNg78PcjsrtCS-'
+PDFMONKEY_DOCUMENTS_ENDPOINT = 'https://api.pdfmonkey.io/api/v1/documents'
 
+# Headers for PDFMonkey API requests
+headers = {
+    'Authorization': f'Bearer {PDFMONKEY_API_KEY}',
+    'Content-Type': 'application/json'
+}
 
 @app.route('/', methods=['GET', 'POST'])
 def mainindexcopy():
@@ -193,6 +201,43 @@ def index():
         </form>
     '''
 
+
+
+
+
+@app.route('/generate_pdf', methods=['POST'])
+def generate_pdf():
+    try:
+        # The data we send to the PDFMonkey template
+        template_data = request.json.get('data')
+
+        # Your PDFMonkey template ID
+        template_id = request.json.get('template_id')
+
+        # Prepare the payload for the API request
+        payload = {
+            'document': {
+                'document_template_id': template_id,
+                'payload': template_data
+            }
+        }
+
+        # Make the API call to PDFMonkey
+        response = requests.post(PDFMONKEY_DOCUMENTS_ENDPOINT, json=payload, headers=headers)
+
+        # Check if the request was successful
+        if response.status_code == 201:
+            pdf_document = response.json()
+            return jsonify({
+                'status': 'success',
+                'pdf_id': pdf_document['data']['id'],
+                'pdf_url': pdf_document['data']['attributes']['download_url']
+            }), 201
+        else:
+            return jsonify({'status': 'error', 'message': 'Failed to generate PDF'}), response.status_code
+
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)}), 500
 
 
 #main driver function 
