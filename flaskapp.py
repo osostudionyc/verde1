@@ -178,7 +178,7 @@ def index():
                 <option value="3">$250</option>
                 <option value="4">$500</option>
                 <option value="5">$1k+</option>
-                
+            </select>
             <br><br>
             <label>Year Built</label>
             <input type="text" name="built"><br><br>
