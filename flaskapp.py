@@ -139,10 +139,8 @@ def index():
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap">
 </head>
-            <center><a href='/' ><img src="/static/DP.png" width="350"></a>
+            <center><a href='/' ><img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/verde.png" width="350"></a>
             <br><i>[Enter some basic information about your proeprty and our proprietary database will create a custiome report with the best ROI renovation projects] </i></center><br><br><br><br><br>
-            <label><img src="static/appmealprep.png" style="width:270px"><br></label>
-          
             <br><br>
             <label>Alternate: Enter a custom budget: $</label>
             <input type="text" name="custbudget"><br><br>
