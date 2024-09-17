@@ -140,7 +140,7 @@ def index():
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap">
 </head>
             <center><a href='/' ><img src="/static/DP.png" width="350"></a>
-            <br><i>[Answer a few questions and enter your budget - the app will recommend products that have been reviewed by the team] </i></center><br><br><br><br><br>
+            <br><i>[Enter some basic information about your proeprty and our proprietary database will create a custiome report with the best ROI renovation projects] </i></center><br><br><br><br><br>
             <label><img src="static/appmealprep.png" style="width:270px"><br></label>
           
             <br><br>
