@@ -136,7 +136,7 @@ def index():
                + 'Square Footage:<br>' \
                + sqft \
                + '<br><br>' \
-               + '<a href="https://deleteplastic.io/webapp"> <b><p <p style="color:green;"><img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/restart2.jpg" style="width:250px; border: solid 0px #CCC"</p></b> </a>'
+               + '<a href="https://plankton-app-5raue.ondigitalocean.app/webapp"> <b><p <p style="color:green;"><img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/restart2.jpg" style="width:250px; border: solid 0px #CCC"</p></b> </a>'
                
 
         return output
