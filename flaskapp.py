@@ -115,11 +115,21 @@ def index():
 
         # Create output string
         output = '<br>' \
-               + '<center><a href="/"><img src="static/deleteplastic2.png" style="width:350px"></a></center><br>' \
+               + '<center><a href="/"><img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/verde.png" style="width:350px"></a></center><br>' \
                + custbudget \
                + '<br><br>' \
+               + 'Address:<br>' \
+               + address \
+               + 'City:<br>' \
+               + city \
                + 'State:<br>' \
                + state \
+               + 'Type:<br>' \
+               + type \
+               + 'Year Built:<br>' \
+               + built \
+               + 'Square Footage:<br>' \
+               + sqft \
                + '<a href="https://deleteplastic.io/webapp"> <b><p <p style="color:green;"><img src="static/restart2.png" style="width:250px; border: solid 0px #CCC"</p></b> </a>'
                
 
@@ -153,10 +163,10 @@ def index():
             <label>State</label>
             <input type="text" name="state"><br><br>
             <br><br>
-            label>Type</label>
+            <label>Type</label>
             <input type="text" name="type"><br><br>
             <br><br>
-            label>Year Built</label>
+            <label>Year Built</label>
             <input type="text" name="built"><br><br>
             <br><br>
             label>Square Footage</label>
