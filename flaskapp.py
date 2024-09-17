@@ -107,11 +107,11 @@ def index():
         ######################################################################### PRODUCTS #######################################################
 
         #filter1
-        if state = "NY":
+        if state == "NY":
             if int(budgethold) > 249:    #budgethold == "1" or budgethold == "2" or budgethold == "3":
-                filter1 = '<br><i> Recommended Drinking Water Filter (based on Budget): </i><br><br> <img src="static/simp1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img>' + '<br><br><a href="simpurereview.html"> <img src="static/preview.png" style="width:200px">  </a><br><br><br>'
+                state1 = '<br><i> Recommended Drinking Water Filter (based on Budget): </i><br><br> <img src="static/simp1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img>' + '<br><br><a href="simpurereview.html"> <img src="static/preview.png" style="width:200px">  </a><br><br><br>'
             else:
-                filter1 = '<br><i> Recommended Drinking Water Filter (based on Budget): </i><br><br> <img src="static/sp1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img><br>'+ '<br> <a href="epicpure.html"> <img src="static/preview.png" style="width:200px">  </a><br><br>'
+                state1 = '<br><i> Recommended Drinking Water Filter (based on Budget): </i><br><br> <img src="static/sp1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img><br>'+ '<br> <a href="epicpure.html"> <img src="static/preview.png" style="width:200px">  </a><br><br>'
                 
 
         # Create output string
@@ -120,7 +120,7 @@ def index():
                + custbudget \
                + '<br><br>' \
                + 'State' \
-               + state \
+               + state1 \
                + '<a href="https://deleteplastic.io/webapp"> <b><p <p style="color:green;"><img src="static/restart2.png" style="width:250px; border: solid 0px #CCC"</p></b> </a>'
                
 
