@@ -15,6 +15,9 @@ headers = {
     'Content-Type': 'application/json'
 }
 
+
+
+
 @app.route('/', methods=['GET', 'POST'])
 def mainindexcopy():
 
@@ -238,6 +241,16 @@ def generate_pdf():
 
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)}), 500
+
+    curl -X POST http://127.0.0.1:5000/generate_pdf \
+          -H "Content-Type: application/json" \
+          -d '{
+                "template_id": "your_template_id",
+                "data": {
+                    "name": "John Doe",
+                    "date": "2024-09-16"
+                }
+              }'
 
 
 #main driver function 
