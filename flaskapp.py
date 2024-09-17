@@ -169,8 +169,16 @@ def index():
             <label>State</label>
             <input type="text" name="state"><br><br>
             <br><br>
-            <label>Type</label>
-            <input type="text" name="type"><br><br>
+            
+
+            <label> What Type of Property </label>
+            <select name="type">
+                <option value="1">Multi</option>
+                <option value="2">$100</option>
+                <option value="3">$250</option>
+                <option value="4">$500</option>
+                <option value="5">$1k+</option>
+                
             <br><br>
             <label>Year Built</label>
             <input type="text" name="built"><br><br>
