@@ -241,7 +241,7 @@ def generate_pdf():
 
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)}), 500
-
+'''
     curl -X POST http://127.0.0.1:5000/generate_pdf \
           -H "Content-Type: application/json" \
           -d '{
@@ -251,7 +251,7 @@ def generate_pdf():
                     "date": "2024-09-16"
                 }
               }'
-
+'''
 
 #main driver function 
 
