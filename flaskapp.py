@@ -21,7 +21,7 @@ def mainindexcopy():
     return '''
     <form method="POST">
             <br><br>
-            '<center><img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/verde.png" alt="Logo" style="width:350px"> <br><br><p> Welcome to <b>Verde.io</b> - The Ultimate Resource for Renovations that Save Money and Save the Planet </center>
+            '<center><img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/verde.png" alt="Logo" style="width:350px"> <br><br><p> Welcome to <b>Verde.io</b> - The Ultimate Resource for Renovations that Save Money and Save the Planet
 
 
 
@@ -224,52 +224,7 @@ def index():
             <center><a href='/' ><img src="/static/DP.png" width="350"></a>
             <br><i>[Answer a few questions and enter your budget - the app will recommend products that have been reviewed by the team] </i></center><br><br><br><br><br>
             <label><img src="static/appmealprep.png" style="width:270px"><br></label>
-            <label> How often do you usually cook?</label>
-            <select name="option2">
-                <option value="1">Daily</option>
-                <option value="2">Every Other Day</option>
-                <option value="3">2-3 Times / Week</option>
-                <option value="4">Monthly</option>
-                <option value="5">1 Never</option>
-            </select>
-            <br><br>
-            <label> Do you use plastic tupperware?</label>
-            <input type="checkbox" name="check123" value="Y">
-            <br><br>
-            <label> Are you not currently using a safe and chemical free pan to cook with? (Example: Ceramic, Stainless Steel, Cast Iron) </label>
-            <input type="checkbox" name="pans1" value="Y">
-             <br><br>
-            <label> Do you use a plastic based cups / drinkware? </label>
-            <input type="checkbox" name="cups1" value="Y">
-            <br><br><br>
-
-
-            <img src="static/appwater.png" style="width:350px"><br>
-            <label> Do you use a drinking water filtration system? </label>
-            <select name="filter1">
-                <option value="1">None</option>
-                <option value="2">NSF Certified Reverse Osmisis Filter </option>
-                <option value="3">NSF Certified Carbon Filter</option>
-                <option value="4">Other</option>
-            </select>
-            <br><br>
-            <label> Are you not currently using a shower filter? </label>
-            <input type="checkbox" name="shower1" value="Y">
-            <br><br>
-            <label> Do you use a plastic water bottle? </label>
-            <input type="checkbox" name="bottle1" value="Y">
-
-
-            <br><br><br>
-            <img src="static/appbudget.png" style="width:270px"><br>
-            <label> What is your budget? (The app will rank products by health impact and create a custom priority list based on your desired spend) </label>
-            <select name="budget">
-                <option value="1">$50</option>
-                <option value="2">$100</option>
-                <option value="3">$250</option>
-                <option value="4">$500</option>
-                <option value="5">$1k+</option>
-            </select>
+          
             <br><br>
             <label>Alternate: Enter a custom budget: $</label>
             <input type="text" name="custbudget"><br><br>
