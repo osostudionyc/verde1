@@ -120,16 +120,22 @@ def index():
                + '<br><br>' \
                + 'Address:<br>' \
                + address \
+               + '<br><br>' \
                + 'City:<br>' \
                + city \
+               + '<br><br>' \
                + 'State:<br>' \
                + state \
+               + '<br><br>' \
                + 'Type:<br>' \
                + type \
+               + '<br><br>' \
                + 'Year Built:<br>' \
                + built \
+               + '<br><br>' \
                + 'Square Footage:<br>' \
                + sqft \
+               + '<br><br>' \
                + '<a href="https://deleteplastic.io/webapp"> <b><p <p style="color:green;"><img src="static/restart2.png" style="width:250px; border: solid 0px #CCC"</p></b> </a>'
                
 
@@ -169,7 +175,7 @@ def index():
             <label>Year Built</label>
             <input type="text" name="built"><br><br>
             <br><br>
-            label>Square Footage</label>
+            <label>Square Footage</label>
             <input type="text" name="sqft"><br><br>
             <br><br>
             <i> The app will rank products by health impact and create a custom priority list based on your desired spend </p>
