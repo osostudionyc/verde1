@@ -32,8 +32,7 @@ def mainindexcopy():
 </center>
  </p>
             <br><br><center>
-             <a href="/webapp"> <img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/tquiz.png" style="width:300px" > <br>
-            <a href="/reviews"> <img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/PRZ.png" style="width:300px"></center>
+             <a href="/webapp"> <img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/freeport.png" style="width:300px" > <br>
             <br><br><br><br>
             <center><a href = "mailto: hello@deleteplastic.io"><img src="https://raw.githubusercontent.com/osostudionyc/verde1/main/contact.png" style="width:300px"</img></a></center>
             <p>
