@@ -21,7 +21,7 @@ def mainindexcopy():
     return '''
     <form method="POST">
             <br><br>
-            '<center><img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/verde.png" alt="Logo" style="width:350px"> <br><br><p> Welcome to <b>Verde.io<i></b> - Supercharge your Property to Save Money and Save the Planet</i>
+            '<center><img src="https://raw.githubusercontent.com/osostudionyc/verde1/Pictures/verde.png" alt="Logo" style="width:350px"> <br><br><p> Welcome to <b>Verde.io</b> - The Ultimate Resource for Renovations that Save Money and Save the Planet </center>
 
 
 
