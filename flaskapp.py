@@ -101,20 +101,12 @@ def index():
         #custbudget
         if custbudget == "":
             custbudget = "50"
-        elif int(custbudget) > int(custbudget)*100:
-            budgethold = str(int(custbudget))
-        else:
-            custbudget = "Test"
+        
 
         ######################################################################### PRODUCTS #######################################################
 
         #filter1
-        if state == "NY":
-            if int(budgethold) > 249:    #budgethold == "1" or budgethold == "2" or budgethold == "3":
-                state1 = '<br><i> Recommended Drinking Water Filter (based on Budget): </i><br><br> <img src="static/simp1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img>' + '<br><br><a href="simpurereview.html"> <img src="static/preview.png" style="width:200px">  </a><br><br><br>'
-            else:
-                state1 = '<br><i> Recommended Drinking Water Filter (based on Budget): </i><br><br> <img src="static/sp1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img><br>'+ '<br> <a href="epicpure.html"> <img src="static/preview.png" style="width:200px">  </a><br><br>'
-                
+       
 
         # Create output string
         output = '<br>' \
@@ -122,7 +114,7 @@ def index():
                + custbudget \
                + '<br><br>' \
                + 'State' \
-               + state1 \
+               + state \
                + '<a href="https://deleteplastic.io/webapp"> <b><p <p style="color:green;"><img src="static/restart2.png" style="width:250px; border: solid 0px #CCC"</p></b> </a>'
                
 
