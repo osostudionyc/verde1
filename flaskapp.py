@@ -91,6 +91,7 @@ def index():
         # Get form data
         
         custbudget = request.form.get('custbudget')
+        state = request.form.get('state')
 
    
 
@@ -100,79 +101,26 @@ def index():
         #custbudget
         if custbudget == "":
             custbudget = "50"
-        elif int(custbudget) > int(budget)*100:
+        elif int(custbudget) > int(custbudget)*100:
             budgethold = str(int(custbudget))
 
         ######################################################################### PRODUCTS #######################################################
 
         #filter1
-        if filter1 == "1" or filter1 == "4":
+        if state = "NY":
             if int(budgethold) > 249:    #budgethold == "1" or budgethold == "2" or budgethold == "3":
                 filter1 = '<br><i> Recommended Drinking Water Filter (based on Budget): </i><br><br> <img src="static/simp1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img>' + '<br><br><a href="simpurereview.html"> <img src="static/preview.png" style="width:200px">  </a><br><br><br>'
             else:
                 filter1 = '<br><i> Recommended Drinking Water Filter (based on Budget): </i><br><br> <img src="static/sp1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img><br>'+ '<br> <a href="epicpure.html"> <img src="static/preview.png" style="width:200px">  </a><br><br>'
-
-        #shower
-        if shower1 is None:
-            shower1 = ''
-        else:
-            shower1 = '<br><i> Recommended Shower Filter: </i> <br><br> <img src="static/aqy1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img>' + '<br><br><a href="aquayouth.html"> <img src="static/preview.png" style="width:200px">  </a><br><br><br><br>'
-
-        #shower
-        if bottle1 is None:
-            bottle1 = ''
-        else:
-            bottle1 = '<br><i> Recommended Water Bottle: </i> <br><br> <img src="static/EV1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img>' + '<br><br><a href="vostok.html"> <img src="static/preview.png" style="width:200px">  </a><br><br><br><br>'
-
-
-        #cups
-        if cups1 is None:
-            cups1 = ''
-        else:
-            cups1 = '<br><i> Recommended Drinkware Set: </i> <br><br> <img src="static/scott1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img> ' + '<br><br> <a href="SchottReview.html"> <img src="static/preview.png" style="width:200px">  </a><br><br>'
-
-
-        #pans
-        if pans1 is None:
-            pans1 = ''
-
-        else:
-            if budget == "1" or budget == "2" or budget == "3":
-                tc += 199
-                pans1 = '<br> <i>Recommended Cookware Set (based on Budget):</i> <br><br>' + ' <img src="static/treviso1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img>'+ '<br><br><a href="greenpan.html"> <img src="static/preview.png" style="width:200px">  </a><br><br><br>'
                 
-            else:
-                pans1 = '<br><i> Recommended Cookware Set (based on Budget): </i> <br><br>' + '<img src="static/carawayprodfin.png" style="width:400px; height:300px; border: solid 1px #CCC"</img>' + '<br><br><a href="carawayreview.html"> <img src="static/preview.png" style="width:200px">  </a><br><br><br>'
-
-
-        # Set default values for option2 and message
-        if option2 is None:
-            option2 = ''
-            message = 'Not Enough Information Entered <br><br>'
-
-        # Check if months is 2 and option2 is not empty
-        #if months == '2' and option2 != '':
-        if months == '2':
-            tupperhold = 'Tupperware'
-            message = '<br> Month 1: Purchase ' +  tupperhold
-        
-        # Check if check123 is None (i.e., not checked)
-        if check123 is None:
-            check123 = ''
-        else:
-            check123 = '<br><i> Recommended Food Storage Set: </i> <br><br> <img src="static/verel1x.png" style="width:400px; height:300px; border: solid 1px #CCC"</img>' + '<br><br><a href="glassstorage.html"> <img src="static/preview.png" style="width:200px">  </a><br><br><br>'
-
-
-        if pans1 != '' or check123 != '' or cups1 != '':
-            kitchen1 = '<img src="static/kitchencookingheader.png" style="width:500px"</img><br>'
-        else:
-            kitchen1 = ''
 
         # Create output string
         output = '<br>' \
                + '<center><a href="/"><img src="static/deleteplastic2.png" style="width:350px"></a></center><br>' \
                + custbudget \
                + '<br><br>' \
+               + 'State' \
+               + state \
                + '<a href="https://deleteplastic.io/webapp"> <b><p <p style="color:green;"><img src="static/restart2.png" style="width:250px; border: solid 0px #CCC"</p></b> </a>'
                
 
@@ -198,6 +146,10 @@ def index():
             <br><br>
             <label>Alternate: Enter a custom budget: $</label>
             <input type="text" name="custbudget"><br><br>
+            <br><br>
+            <label>State</label>
+            <input type="text" name="state"><br><br>
+            <br><br>
             <i> The app will rank products by health impact and create a custom priority list based on your desired spend </p>
             <br>
             <br>
