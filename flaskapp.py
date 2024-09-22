@@ -6,7 +6,7 @@ from flask import request
 app = Flask(__name__)
 
 # PDFMonkey API details
-PDFMONKEY_API_KEY = 'mS2YudqXyK14-tw_bfVNg78PcjsrtCS-'
+PDFMONKEY_API_KEY = 'CODE HERE'
 PDFMONKEY_DOCUMENTS_ENDPOINT = 'https://api.pdfmonkey.io/api/v1/documents'
 
 # Headers for PDFMonkey API requests
@@ -241,17 +241,7 @@ def generate_pdf():
 
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)}), 500
-'''
-    curl -X POST http://127.0.0.1:5000/generate_pdf \
-          -H "Content-Type: application/json" \
-          -d '{
-                "template_id": "B42E8ED7-A637-4073-9671-B0ABA6537858",
-                "data": {
-                    "name": "John Doe",
-                    "date": "2024-09-16"
-                }
-              }'
-'''
+
 
 #main driver function 
 
